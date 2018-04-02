@@ -79,14 +79,14 @@
 					<div class="online-phone">
 						<div class="online-modal">
 							<div class="online-modal-phone">
-								<p>电话：<br>020-22954556<br>
+								<p>电话：<br>020-22954556</p>
 							</div>
 						</div>
 					</div>
 					<div class="online-weixin">
 						<div class="online-modal">
 							<div class="online-modal-weixin">
-								<span></span><img style="" src="/userfiles/images/fixed-code.jpg" alt="" /></a>
+								<span></span><img style="" src="image/kefuWX.jpg" alt="" /></a>
 							</div>
 						</div>
 					</div>
@@ -985,7 +985,7 @@
 							<div class="address" style="display:none;">广州高新技术产业开发区揽月路8号</div>
 							<!--<div class="index-contact-map" id="index-contact-map"></div>-->
 							
-							 <div id="mapContainer" class="index-contact-map" id="index-contact-map" tabindex="0" style="width: 1200px;height:300px;margin: 0.7rem auto;"></div>
+							<div id="mapContainer" class="index-contact-map" id="index-contact-map" tabindex="0" style="width: 12rem;height:3rem;margin: 0.7rem auto;"></div>
 							 
 						</div>
 					</div>
@@ -1003,26 +1003,24 @@
 	    <script type="text/javascript">
 	        var map = new AMap.Map('mapContainer',{
 	            resizeEnable: true,
-	            zoom: 10,
-	            center: [113.233425,23.39359]
+	            zoom: 15,
+	            center: [113.231699,23.39811]
 	        });
 	        var marker = new AMap.Marker({
-			    position: [113.233425,23.39359]
+			    position: [113.231699,23.39811]
 			});
 			marker.setMap(map);
 			var circle = new AMap.Circle({
-			    center: [113.233425,23.39359],
-			    radius: 10,
-			    fillOpacity:0.2,
-			    strokeWeight:1
+			    center: [113.231699,23.39811],
+			    radius: 10
 			})
 			circle.setMap(map);
-			map.setFitView()
 			var info = new AMap.InfoWindow({
 			    content:"这里是田美新都花园",
 			    offset:new AMap.Pixel(0,-28)
 			})
 			info.open(map,marker.getPosition());
+
 		</script>
 		<script>
 			$('div.index-cases-fixed .fixed-close').on('click', function() {
