@@ -45,7 +45,7 @@ textarea {font-family: '微软雅黑';}
 .head-menu ul{overflow:hidden;}
 .head-menu ul li{float:left;margin-left:25px;}
 .head-menu ul li:first-child{margin-left:0;}
-.head-menu ul li a{display:block;color:#fff;line-height:62px;text-align:center;padding:0 15px;font-size:18px;border-top:4px solid transparent;}
+.head-menu ul li a{display:block;color:#fff;line-height:62px;text-align:center;padding:0 15px;font-size:24px;border-top:4px solid transparent;}
 .head-menu ul li a.active{color:#C43F3B;border-bottom:4px solid #C43F3B;}
 @media screen and (max-width: 1280px){.head-menu ul li a{font-size: 16px;}}
 .head-hot{position:absolute;top:0.18rem;right:2.6%;font-size:18px;color:#FFFFFF;font-weight:bold;}
