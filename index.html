@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no" />
@@ -13,12 +12,14 @@
 		<link rel="stylesheet" href="css/swiper-3.4.min.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/video-js.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/pcstyle.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="css/chanpin.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/pcstyle.css">-->
 		<script src="js/jquery-2.1.min.js" charset="utf-8"></script>
 		<script src="js/video.js" charset="utf-8"></script>
 		<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=B3f7707c25da5b29a6ff69618788a296"></script>-->
 		<script src="js/public.js"></script>
+		<script src="js/index.js"></script>
 		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.4&key=23440f75d91b67926cc86fda0dc133d8"></script>
 
 	</head>
@@ -27,7 +28,7 @@
 		<!-- head -->
 		<div class="head">
 			<div class="head-logo">
-				<img src="image/logo.png" alt="纯镜文化">
+				<img src="image/logo.png" class="head_logoImg" alt="纯镜文化">
 			</div>
 			<div class="head-menu">
 				<ul>
@@ -56,9 +57,6 @@
 			</div>
 			<div class="head-hot01">
 				<a href="tel:020-22954556" data-ignore="true" title="020-22954556"></a>
-			</div>
-			<div class="nav-btn" onclick="navIndex(this)" data-nav="0">
-				<i></i>
 			</div>
 		</div>
 
@@ -186,81 +184,27 @@
 			<div class="fixed-close">
 			</div>
 		</div>
-
-		<!--手机端案例弹窗-->
-		<div class="index-cases-fixed" id="mbcase_show_3">
-			<div class="mb-index">
-				<div class="mb_index_video">
-					<div class="video_mb">
-						<video controls="controls" src="http://p6dw6uni2.bkt.clouddn.com/dream.mp4" id="video4" poster="image/gril_dream.png" width="100%" height="100%"></video>
-						<div class="fixed-close01">
-
-						</div>
-					</div>
-				</div>
-				<div class="fixed-close">
-				</div>
-			</div>
-		</div>
-		<div class="index-cases-fixed" id="mbcase_show_2">
-			<div class="mb-index">
-				<div class="mb_index_video">
-					<div class="video_mb">
-						<video controls="controls" src="http://p6dw6uni2.bkt.clouddn.com/love.mp4" id="video4" poster="image/love.png" width="100%" height="100%"></video>
-						<div class="fixed-close01">
-
-						</div>
-					</div>
-				</div>
-				<div class="fixed-close">
-				</div>
-			</div>
-		</div>
-		<div class="index-cases-fixed" id="mbcase_show_1">
-			<div class="mb-index">
-				<div class="mb_index_video">
-					<div class="video_mb">
-						<video controls="controls" src="http://p6dw6uni2.bkt.clouddn.com/winter.mp4" id="video4" poster="image/winter.png" width="100%" height="100%"></video>
-						<div class="fixed-close01">
-
-						</div>
-					</div>
-				</div>
-				<div class="fixed-close">
-				</div>
-			</div>
-		</div>
-
-		<!--首页 视频播放-->
-		<div class="index-cases-fixed" id="df_play1">
+		<!--<div class="index-cases-fixed" id="case_show_1">
 			<div class="index-cases-fixed-con">
-				<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster="" data-setup='{"example_option":true}' src="/userfiles/files/flowers.mp4" width="100%" height="100%">
-					<!--<source id="example_video" src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />-->
+			<video width="320" height="240" controls="controls" class="videoPanel" controlslist="nodownload">
+			  <source src="http://p6dw6uni2.bkt.clouddn.com/dream.ogg" type="video/ogg" />
+			  <source src="http://p6dw6uni2.bkt.clouddn.com/dream.mp4" type="video/mp4" />
+			  <source src="http://p6dw6uni2.bkt.clouddn.com/dream.webm" type="video/webm" />
+			  <object data="http://p6dw6uni2.bkt.clouddn.com/dream.mp4" width="320" height="240">
+			    <embed width="320" height="240" src="/i/movie.swf" />
+			  </object>
+			</video>
+			</div>
+		</div>-->
 
-				</video>
-			</div>
-			<div class="fixed-close">
-			</div>
-		</div>
-		<div class="index-cases-fixed" id="df_play2">
-			<div class="index-cases-fixed-con">
-				<video id="example_video_2" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster="" data-setup='{"example_option":true}' src="/userfiles/files/1.mp4" width="100%" height="100%">
-					<!--<source id="example_video" src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />-->
-
-				</video>
-			</div>
-			<div class="fixed-close">
-			</div>
-		</div>
 
 		<div class="swiper-container swiper-container01">
 			<div class="swiper-wrapper">
-
 				<!--首页-->
 				<div class="swiper-slide">
 					<div class="swiper01-main">
-						<div class="webkit-name ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s">
-							<img style="" src="image/ic_logo_big.png" alt="" /></a>
+						<div class="logo_bit ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s">
+							<img class="" src="image/ic_logo_big.png" alt="" /></a>
 						</div>
 
 						<div class="df_swiper-pagination"></div>
@@ -272,7 +216,6 @@
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<img class="big big-pic" alt="">
-									<!--src="images/firstPage-bg.png"-->
 									<video class="video-swiper01" id="mb_video_1" loop="loop" preload="auto" type="video/mp4" autoplay="autoplay" style="background:#000;width:100%;height:100%;object-fit:fill" muted playsinline>
 										<source src="image/chunjing.mov" type="video/webm">
 									</video>
@@ -286,9 +229,8 @@
 								</script>
 								<div class="swiper-slide">
 									<img class="big big-pic" alt="">
-									<!--src="images/firstPage-bg.png"-->
 									<video class="video-swiper01" id="mb_video_2" loop="loop" preload="auto" type="video/mp4" autoplay="autoplay" style="background:#000;width:100%;height:100%;object-fit:fill" muted playsinline>
-										<source src="image/chunjing.mov" type="video/webm">
+										<source src="image/earth.mov" type="video/webm">
 									</video>
 								</div>
 								<script>
@@ -298,11 +240,6 @@
 										myPlayer.play();
 									});
 								</script>
-								<!--<div class="swiper-slide">
-                                <video class="video-swiper01" id="video-swiper01" loop="loop" preload="auto" type="video/mp4" autoplay="autoplay" style="background:#000;width:100%;height:100%;object-fit:fill">
-                                    <source src="/templates/default/images/flowers.mp4" type="video/webm">
-                                </video>
-                            </div>-->
 							</div>
 						</div>
 					</div>
@@ -380,154 +317,6 @@
 							</div>
 						</div>
 						</div>
-						<!--<div class="swiper02-list">
-							<ul>
-								<li class="ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="1.5s">
-									<a href="/productdetail-8.html" title="">
-										<div class="index-pro-pic">
-											<img src="image/ic_product.png" alt="宣传片">
-										</div>
-										<div class="index-pro-name">
-											宣传片
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-										</div>
-									</a>
-								</li>
-								<li class="ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="1.5s">
-									<a href="/productdetail-7.html" title="">
-										<div class="index-pro-pic">
-											<img src="image/ic_product.png" alt="广告片">
-										</div>
-										<div class="index-pro-name">
-											广告片
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-										</div>
-									</a>
-								</li>
-								<li class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1.5s">
-									<a href="/productdetail-6.html" title="">
-										<div class="index-pro-pic">
-											<img src="image/ic_product.png" alt="微电影">
-										</div>
-										<div class="index-pro-name">
-											微电影
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-										</div>
-									</a>
-								</li>
-								<li class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1.5s">
-									<a href="/productdetail-5.html" title="">
-										<div class="index-pro-pic">
-											<img src="image/ic_product.png" alt="栏目包装">
-										</div>
-										<div class="index-pro-name">
-											栏目包装
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-										</div>
-									</a>
-								</li>
-								<li class="ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="1.5s">
-									<a href="/productdetail-4.html" title="">
-										<div class="index-pro-pic">
-											<img src="image/ic_product.png" alt="动画制作">
-										</div>
-										<div class="index-pro-name">
-											动画制作
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-										</div>
-									</a>
-								</li>
-								<li class="ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="1.5s">
-									<a href="/productdetail-3.html" title="">
-										<div class="index-pro-pic">
-											<img src="image/ic_product.png" alt="活动拍摄">
-										</div>
-										<div class="index-pro-name">
-											活动拍摄
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-										</div>
-									</a>
-								</li>
-								<li class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1.5s">
-									<a href="/productdetail-2.html" title="">
-										<div class="index-pro-pic">
-											<img src="image/ic_product.png" alt="企业宣传片">
-										</div>
-										<div class="index-pro-name">
-											企业宣传片
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-										</div>
-									</a>
-								</li>
-								<li class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1.5s">
-									<a href="/productdetail-1.html" title="">
-										<div class="index-pro-pic">
-											<img src="image/ic_product.png" alt="网络剧">
-										</div>
-										<div class="index-pro-name">
-											网络剧
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-
-										</div>
-									</a>
-								</li>
-							</ul>
-							<div class="swiper-container swiper-container-pro-sm">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="index-pro-pic ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1.5s">
-											<img src="image/ic_product.png" alt="宣传片">
-										</div>
-										<div class="index-pro-name">
-											宣传片
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="index-pro-pic ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1.5s">
-											<img src="image/ic_product.png" alt="广告片">
-										</div>
-										<div class="index-pro-name">
-											广告片
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="index-pro-pic ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1.5s">
-											<img src="image/ic_product.png" alt="微电影">
-										</div>
-										<div class="index-pro-name">
-											微电影
-										</div>
-										<div class="index-pro-name11">
-											企业宣传片制作、城市形象宣传片制作、产品宣传片制作、招商宣传片拍摄制作、专题片制作、记录片拍摄制作、教学片、培训片、旅游风景片。
-										</div>
-									</div>
-								</div>
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
-							</div>
-						</div>-->
 					</div>
 				</div>
 
@@ -545,9 +334,9 @@
 							<ul>
 								<li class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1.5s" id="case_3">
 									<div class="index-cases-img">
-										<span></span><img src="image/gril_dream.png" alt="女儿的梦">
+										<span></span><img src="image/gril_dream.png" class="show_img" alt="女儿的梦">
 										<div class="index-cases-modal">
-											<span></span><img src="image/play-modal.png" alt="">
+											<span></span><img src="image/play-modal.png" class="play_img" alt="">
 										</div>
 									</div>
 									<div class="index-cases-name">
@@ -564,9 +353,9 @@
 								</script>
 								<li class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1.5s" id="case_2">
 									<div class="index-cases-img">
-										<span></span><img src="image/love.png" alt="当爱照进心灵">
+										<span></span><img src="image/love.png" class="show_img" alt="当爱照进心灵">
 										<div class="index-cases-modal">
-											<span></span><img src="image/play-modal.png" alt="">
+											<span></span><img src="image/play-modal.png" class="play_img" alt="">
 										</div>
 									</div>
 									<div class="index-cases-name">
@@ -583,9 +372,9 @@
 								</script>
 								<li class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1.5s" id="case_1">
 									<div class="index-cases-img">
-										<span></span><img src="image/winter.png" alt="“暖冬">
+										<span></span><img src="image/winter.png" class="show_img" alt="“暖冬">
 										<div class="index-cases-modal">
-											<span></span><img src="image/play-modal.png" alt="">
+											<span></span><img src="image/play-modal.png" class="play_img" alt="">
 										</div>
 									</div>
 									<div class="index-cases-name">
@@ -601,230 +390,100 @@
 									});
 								</script>
 							</ul>
-							<div class="swiper-container swiper-container-cases-sm">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide" id="mbcase_3">
-										<div class="index-cases-img">
-											<span></span><img src="image/gril_dream.png" alt="女儿的梦">
-											<div class="index-cases-modal">
-												<span></span><img src="image/play-modal.png" alt="">
-											</div>
-										</div>
-										<div class="index-cases-name">
-											<p>女儿的梦</p>
-											<div class="index-cases-name-modal"></div>
-										</div>
-									</div>
-									<script>
-										$('#mbcase_' + 3).on('click', function() {
-											$('#mbcase_show_' + 3).css({
-												"display": "block"
-											});
-										});
-									</script>
-									<div class="swiper-slide" id="mbcase_2">
-										<div class="index-cases-img">
-											<span></span><img src="image/love.png" alt="当爱照进心灵">
-											<div class="index-cases-modal">
-												<span></span><img src="image/play-modal.png" alt="">
-											</div>
-										</div>
-										<div class="index-cases-name">
-											<p>当爱照进心灵</p>
-											<div class="index-cases-name-modal"></div>
-										</div>
-									</div>
-									<script>
-										$('#mbcase_' + 2).on('click', function() {
-											$('#mbcase_show_' + 2).css({
-												"display": "block"
-											});
-										});
-									</script>
-									<div class="swiper-slide" id="mbcase_1">
-										<div class="index-cases-img">
-											<span></span><img src="image/winter.png" alt="暖冬">
-											<div class="index-cases-modal">
-												<span></span><img src="image/play-modal.png" alt="">
-											</div>
-										</div>
-										<div class="index-cases-name">
-											<p>暖冬</p>
-											<div class="index-cases-name-modal"></div>
-										</div>
-									</div>
-									<script>
-										$('#mbcase_' + 1).on('click', function() {
-											$('#mbcase_show_' + 1).css({
-												"display": "block"
-											});
-										});
-									</script>
-								</div>
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
-							</div>
 						</div>
 						<!--<div class="index-cases-more ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1.5s">
 							<a href="class-1.html" title="案例">MORE</a>
 						</div>-->
 					</div>
 				</div>
-
 				<!--服务-->
 				<!--产品-->
-				<div class="swiper-slide" style="background:url(image/Group_3.png) no-repeat center;background-size:100% 100%;">
+				<div class="swiper-slide" style="background:url(image/bg3.png) no-repeat center;background-size:100% 100%;">
 					<div class="swiper05-main">
-						<div class="index_vv_box">
-							<div class="index-service">
-								<div class="swiper-container swiper-container05" style="margin-top: -1.5rem;">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<!--<div style="position:absolute; width: 12rem;height: 100%;margin: -0.5rem auto;">
-												<div class="swiper02-title ani vis" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
-													服务流程
-												</div>
-												<div class="swiper02-name11 ani vis" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.5s">
-													影视文化传媒一专注品牌创意推广
-												</div>
-											</div>-->
-											<div class="service01" style="padding: 2rem 0;">
-												<div class="index-service-con ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s">
-													<ul>
-														<li>
-															<div class="index-service-line">
-																<span class="index-service-round"></span>
-																<span class="index-service-line02"></span>
-															</div>
-															<div class="index-service-name">
-																<span>【需求了解】</span>
-															</div>
-															<div class="index-service-name11">
-																当您提交订单后，我们会第一时间联系您，针对您的需求进行详细沟通。
-															</div>
-														</li>
-														<li>
-															<div class="index-service-line">
-																<span class="index-service-round"></span>
-																<span class="index-service-line02"></span>
-															</div>
-															<div class="index-service-name">
-																<span>【开发制作】</span>
-															</div>
-															<div class="index-service-name11">
-																我们将设置科学项目节点，并及时与您沟通意见，保证最优制作水平的前提下以最快的速度为您制作。
-															</div>
-														</li>
-														<li>
-															<div class="index-service-line">
-																<span class="index-service-round"></span>
-																<span class="index-service-line02"></span>
-															</div>
-															<div class="index-service-name">
-																<span>【成果交付】</span>
-															</div>
-															<div class="index-service-name11">
-																经过最终成果的审核、测试，在您认可质量、确认接收后，我们会将交付。
-															</div>
-														</li>
-														
-														<li>
-															<div class="index-service-line">
-																<span class="index-service-round"></span>
-																<span class="index-service-line02"></span>
-															</div>
-															<div class="index-service-name">
-																<span>【内容策划】</span>
-															</div>
-															<div class="index-service-name11">
-																众多的制作团队会根据您的需求为您进行创意策划。
-															</div>
-														</li>
-														<li>
-															<div class="index-service-line">
-																<span class="index-service-round"></span>
-																<span class="index-service-line02"></span>
-															</div>
-															<div class="index-service-name">
-																<span>【全程监管】</span>
-															</div>
-															<div class="index-service-name11">
-																职业项目经理全程监管创意策划、美工、程序开发、影视制作、运营推广等所有制作流程。
-															</div>
-														</li>
-														
-													</ul>
-												</div>
+						<div class="swiper-slide">
+							<!--<div class="rte">
+								<p>asd</p>
+							</div>-->
+							<div>
+								<div class="swiper02-title ani vis" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
+									服务流程
+								</div>
+								<div class="swiper02-name11 ani vis" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.5s">
+									影视文化传媒一专注品牌创意推广
+								</div>
+							</div>
+							<div class="service01">
+								<div class="index-service-con ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s">
+									<ul>
+										<li>
+											<div class="index-service-line">
+												<span class="index-service-round"></span>
+												<span class="index-service-line02"></span>
 											</div>
-											<div class="service02 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s">
-												<div class="service02-list" style="margin-top: 3rem;">
-													<ul>
-														<li>
-															<div class="service02-round">
-															</div>
-															<div class="service02-name">
-																【需求了解】
-															</div>
-															<div class="service02-name11">
-																当您提交订单后，我们会第一时间联系您，针对您的需求进行详细沟通。
-															</div>
-															<div class=clear></div>
-														</li>
-														<li>
-															<div class="service02-round">
-															</div>
-															<div class="service02-name">
-																【内容策划】
-															</div>
-															<div class="service02-name11">
-																众多的制作团队会根据您的需求为您进行创意策划。
-															</div>
-															<div class=clear></div>
-														</li>
-														<li>
-															<div class="service02-round">
-															</div>
-															<div class="service02-name">
-																【全程监管】
-															</div>
-															<div class="service02-name11">
-																职业项目经理全程监管创意策划、美工、程序开发、影视制作、运营推广等所有制作流程。
-															</div>
-															<div class=clear></div>
-														</li>
-														<li>
-															<div class="service02-round">
-															</div>
-															<div class="service02-name">
-																【开发制作】
-															</div>
-															<div class="service02-name11">
-																我们将设置科学项目节点，并及时与您沟通意见，保证最优制作水平的前提下以最快的速度为您制作。
-															</div>
-															<div class=clear></div>
-														</li>
-														<li>
-															<div class="service02-round">
-															</div>
-															<div class="service02-name">
-																【成果交付】
-															</div>
-															<div class="service02-name11">
-																经过最终成果的审核、测试，在您认可质量、确认接收后，我们会将交付。
-															</div>
-															<div class=clear></div>
-														</li>
-													</ul>
-												</div>
+											<div class="index-service-name">
+												<span>【需求了解】</span>
 											</div>
-										</div>
-									</div>
+											<div class="index-service-name11">
+												当您提交订单后，我们会第一时间联系您，针对您的需求进行详细沟通。
+											</div>
+										</li>
+										<li>
+											<div class="index-service-line">
+												<span class="index-service-round"></span>
+												<span class="index-service-line02"></span>
+											</div>
+											<div class="index-service-name">
+												<span>【开发制作】</span>
+											</div>
+											<div class="index-service-name11">
+												我们将设置科学项目节点，并及时与您沟通意见，保证最优制作水平的前提下以最快的速度为您制作。
+											</div>
+										</li>
+										<li>
+											<div class="index-service-line">
+												<span class="index-service-round"></span>
+												<span class="index-service-line02"></span>
+											</div>
+											<div class="index-service-name">
+												<span>【成果交付】</span>
+											</div>
+											<div class="index-service-name11">
+												经过最终成果的审核、测试，在您认可质量、确认接收后，我们会将交付。
+											</div>
+										</li>
+										
+										<li>
+											<div class="index-service-line">
+												<span class="index-service-round"></span>
+												<span class="index-service-line02"></span>
+											</div>
+											<div class="index-service-name">
+												<span>【内容策划】</span>
+											</div>
+											<div class="index-service-name11">
+												众多的制作团队会根据您的需求为您进行创意策划。
+											</div>
+										</li>
+										<li>
+											<div class="index-service-line">
+												<span class="index-service-round"></span>
+												<span class="index-service-line02"></span>
+											</div>
+											<div class="index-service-name">
+												<span>【全程监管】</span>
+											</div>
+											<div class="index-service-name11">
+												职业项目经理全程监管创意策划、美工、程序开发、影视制作、运营推广等所有制作流程。
+											</div>
+										</li>
+										
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
+				
 				<!--关于纯镜-->
 				<!--产品-->
 				<div class="swiper-slide" style="background:url(image/bg4.png) no-repeat center;background-size:100% 100%;">
@@ -965,7 +624,7 @@
 						</div>
 					</div>
 				</div>
-
+				
 				<!--联系我们-->
 				<!--产品-->
 				<div class="swiper-slide" style="background:url(image/bg5.png) no-repeat center;background-size:100% 100%;">
@@ -985,14 +644,13 @@
 							<div class="address" style="display:none;">广州高新技术产业开发区揽月路8号</div>
 							<!--<div class="index-contact-map" id="index-contact-map"></div>-->
 							
-							<div id="mapContainer" class="index-contact-map" id="index-contact-map" tabindex="0" style="width: 12rem;height:3rem;margin: 0.7rem auto;"></div>
-							 
+							<div id="mapContainer" class="index-contact-map" id="index-contact-map" tabindex="0" style="width: 60rem;height:20rem;margin: 0.7rem auto;"></div>
+							<a href="http://www.miitbeian.gov.cn"><p style="text-align: center;margin-top: 20px;">粤ICP备17165041号</p></a>
 						</div>
 					</div>
-					<div class="copyright">
-						<a href="http://www.miibeian.gov.cn/" rel="nofollow" target="_blank" style="color:#fff;font-size:14px;">粤ICP备17098481号-1</a>
-					</div>
 				</div>
+				
+				
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
@@ -1022,6 +680,7 @@
 			info.open(map,marker.getPosition());
 
 		</script>
+		
 		<script>
 			$('div.index-cases-fixed .fixed-close').on('click', function() {
 				$('div.index-cases-fixed').css({
